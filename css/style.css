@@ -1081,7 +1081,7 @@ background-color: var(--shade--03--l);
     aside {
         grid-area: aside;
         position: sticky;
-        top: 146px;
+        top: 148px;
     }
     aside h2 {
         display: none;
@@ -1096,8 +1096,8 @@ background-color: var(--shade--03--l);
     }
    .buttonaside {
         font-size: 1rem;
-        height: 28px;
-        padding: 0;
+        height: auto;
+        
     }
    #hiddenCart {
         position: absolute;
@@ -1137,7 +1137,7 @@ background-color: var(--shade--03--l);
                              "b"
                              "c" ;
         justify-content: center;
-        max-width: 90%;
+        max-width: 48%;
         margin: 0.2rem;
         width: 280px;
     }
@@ -1146,7 +1146,7 @@ background-color: var(--shade--03--l);
         padding: 4px;
     }
     .customer img {
-        height: 240px;
+        height: auto;
         border-radius: 28px 28px 0 0;
         width: 100%;
         padding: 0;
