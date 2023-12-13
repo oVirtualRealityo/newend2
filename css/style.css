@@ -345,6 +345,7 @@ aside h2 {
     display: flex;
     justify-content: center;
     margin: 0;
+    background-color: var(--a-color-main-);
 }
 .searchAside {
     padding: 4px;
