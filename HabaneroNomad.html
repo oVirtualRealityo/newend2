@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Habanero nomad productpage">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HETE saus - Habanero Nomad</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Assets/Icons/iconforhetesaus.png" type="image/x-icon">
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="" defer></script>
+    <script src="JS/map.JS" defer></script>
+    <script src="JS/wishinglist.js" defer></script>
+    <script src="JS/shoppingCartScript.js" defer></script>
+</head>
+<body>
+    
+    <section class="topliner"><span>Snelle levering doorheen heel Europa!</span> <span>Geniet van 20% kerstkorting.</span></section>
+    <header>
+        <section class="logo">
+           <a href="index.html"> <img src="Assets/Icons/iconforhetesaus.png" alt="foto van hete saus" width="90px" height="90px"></a>
+            <a href="index.html"><h1>HETE SAUS</h1></a>
+        </section>
+    <form action="" id="headerSearch">
+        <label for="headerSearchField" class="hiddenO">Zoekt u iets?</label>
+        <input type="search" name="headerSearchField" id="headerSearchField" placeholder="Zoeken...">
+        <button type="submit"><img src="Assets/Icons/searchwhite.jpg" alt="Zoeken" width="32px" height="32px"></button>
+    </form>
+        <button id="popupShoppingCart"><img src="Assets/Icons/Shopcartbasic.jpg" alt="shoppingcart" width="64px" height="64px"><section id="cartCounter">0</section></button>
+    </header>
+    <section id="shopCartPopup"> <button id="closeShopCart">X</button>
+        <table>
+            <thead><tr>
+                <th colspan="2">Product</th>
+                <th>Aantal</th>
+                <th>Prijs</th>
+                <th colspan="1">Verwijderen</th>
+            </tr></thead>
+            <tbody id="myShoppingCartPopup">
+                <tr><td colspan="5">
+                  <p>Hier kan nog wel een koopje bij in toch?</p> 
+                </td></tr>
+            </tbody>
+            <tfoot><tr>
+                <th>Prijs zonder btw:</th>
+                <th></th>
+                <th colspan="1" id="popupPrice1"></th>
+                <th></th>
+                <th>+20% BTW</th>
+            </tr></tfoot>
+        </table>
+        <section class="popupText">
+            <p>Totaal aantal items -> <span id="totalCountPopup" class="important"></span></p>
+            <p>Totale prijs met btw -> <span id="totalWithVATPopup" class="important"></span></p>
+        </section>
+        <button class="checkoutButton">Bestellen die handel!</button>
+    </section>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="productpagina.html">Producten</a>
+        <a href="contact.html">Contact</a>
+        <a href="klanten.html">Klanten</a>
+    </nav>
+
+    <section class="banner"><img src="Assets/Images/Banners/BannerApprox9-3.webp" alt="bannerhetesaus" width="auto" height="auto"></section>
+    <main>
+        <h2>!!Habanero Nomad !!</h2>
+        <section class="detailcontainer">
+            <section class="detailimage">
+                <article class="product" data-ingredients="Habanero"> 
+                    <figure> <img src="Assets/Images/ProductPictures/Habanero nomad.webp" alt="Foto van Habanero nomad" max-width="auto" height="auto">
+                   <figcaption>Deze saus heeft een scoville rating van 2.700.00, geen lachertje dus!</figcaption>
+                    </figure>
+                    <a href="HabaneroNomad.html" class="hiddenO"><h3>Habanero Nomad</h3></a>
+    
+                    <section class="shorttext hiddenO">
+                        Gebaseerd op een eeuwenoud Nomadisch recept.
+                        Hitte en smaak gegarandeerd! 
+                    </section>
+    
+                    <section class="priceDetail"> <p>Prijs: &euro;<span class="priceValue">10,50</span></p> <p>Size: <span>350ml</span></p>
+                    </section> 
+    
+                    <section class="buttonboxproduct">
+                        <select class="bottleCountNumber">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                        </select>
+                        <button class="buyButton">In mandje</button>
+                        <button class="addToWishlist">wishlist</button>
+                    </section>
+                    <span class="nobackgroundproduct"><img src="Assets/Icons/wishlistjpg.png" alt="OnWishlist" class="wishlistIMG" width="48px" height="40px"></span>
+                </article>
+            </section>
+          
+            <section class="detailsection">
+                <section>
+                    <article>  
+                        <h3>Reizende hitte</h3>                        
+                        <p>
+                            "Habanero Nomad" is een verrukkelijke hotsauce die je smaakpapillen meeneemt op een avontuurlijke reis door smaken en aroma's. Deze oranjegekleurde saus is niet alleen een lust voor het oog, maar ook een feest voor de smaakpapillen dankzij zijn onmiskenbare pittigheid en diepe, aardse tonen. <br> <br>
+
+Met een recept dat teruggaat tot de tijd van oude nomadische gemeenschappen, is de Habanero Nomad hotsauce een meesterwerk van smaak en traditie. De kern van deze saus wordt gevormd door de intense hitte van habanero en serrano pepers, die zorgvuldig worden gemengd om een perfect gebalanceerde pittigheid te creëren die een verrukkelijke warmte achterlaat op je tong. <br> <br>
+
+Naast de peperige kick bevat deze saus een subtiele zoetheid van wortels, waardoor een harmonieus samenspel van smaken ontstaat. De toevoeging van specerijen uit het Midden-Oosten verheft deze saus naar een ongekend niveau van complexiteit en diepte, waarbij elke druppel een verhaal vertelt van rijke kruiden en intrigerende smaaknuances.
+<br><br>
+De geheime mix van specerijen uit het Midden-Oosten voegt een exotische twist toe aan deze hotsauce, waarbij elke druppel een reis door tijd en cultuur belichaamt. De saus is niet alleen een bron van verbluffende hitte, maar ook een eerbetoon aan eeuwenoude culinaire tradities.
+<br><br>
+Habanero Nomad is niet zomaar een hotsauce; het is een smaakvolle herinnering aan de glorieuze smaken die door de tijd heen zijn gereisd. Of je het nu gebruikt als een pittige toevoeging aan je favoriete gerechten of als een avontuurlijke dip, elke keer dat je deze saus proeft, ervaar je de rijke erfenis van de nomadische keuken in al zijn glorie.
+                        </p>
+                    </article>
+                   
+                </section>
+                
+                <h2>Verdere info</h2>
+                <section class="detailbox">    
+                    <article> 
+                        <h3>Lekker bij:</h3>
+                        <ul>
+                        <li>Tajin</li>
+                        <li>Kebabs/Durum</li>
+                        <li>Pasta</li>
+                        
+                        <li>En nog veel meer!</li>
+                    </ul>
+                    </article>
+                    <article>
+                        <h3>Ingredienten</h3>
+                        <ul>
+                            <li>Habanero pepers</li>
+                            <li>Serrano pepers</li>
+                            <li>Wortels</li>
+                            <li>Midden-Oosterse kruiden</li>
+                          </ul>
+                </article>
+                </section>
+                <p class="centered">Perfect voor de midden-Oosterse keuken.</p>
+            </section>
+
+        </section>
+        <section class="detailcontainer">
+            <form action="" class="detailform">
+                <label for="reviewArea" class="contactFieldLabel">Hier kan je een review achterlaten!</label>
+                    <textarea name="reviewArea" id="" cols="30" rows="10"></textarea>
+                
+                <input type="submit" value="Review" class="submitt">
+                
+            </form>
+        </section>
+        <section><h2>Gerelateerde producten:</h2>
+            <section class="productcontainer">
+            <article class="product" data-ingredients="Serrano, Habanero">
+                <figure>  <img src="Assets/Images/ProductPictures/ElToroLoco.webp" alt="Foto van Minotaurs secret" max-width="auto" height="auto">
+                </figure>
+                  <a href="Minotaurs Secret.html"><h3>Minotaurs Secret</h3></a>
+  
+                <section class="shorttext">
+                      Verdwaal in een doolhof van Cretaanse tradities en smaken die euwen teruggaan!
+                  </section>
+  
+                  <section class="price"> <p>Prijs: &euro;<span class="priceValue">12,50</span></p> <p>Size: <span>350ml</span></p>
+                  </section> 
+  
+                  <section class="buttonboxproduct">
+                      <select class="bottleCountNumber">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="12">12</option>
+                      </select>
+                      <button class="buyButton">In mandje</button>
+                      <button class="addToWishlist">wishlist</button>
+                  </section>
+                 <span class="nobackgroundproduct"><img src="Assets/Icons/wishlistjpg.png" alt="OnWishlist" class="wishlistIMG" width="48px" height="40px"></span>
+              </article>
+
+              <article class="product" data-ingredients="Ghost Pepper, Habanero, Chilli">  
+                <figure>  <img src="Assets/Images/ProductPictures/Curse of the desert.webp" alt="Foto van Curse of the desert" max-width="auto" height="auto">
+                </figure>
+                  <a href="01Curse of the Desert.html"><h3>Curse of the desert</h3></a>
+  
+                  <section class="shorttext">
+                      Deze saus zet je vast in een woestijn van hitte! Eens begonnen, blijft het branden!
+                  </section>
+  
+                  <section class="price"> <p>Prijs: &euro;<span class="priceValue">12,50</span></p> <p>Size: <span>350ml</span></p>
+                  </section> 
+  
+                  <section class="buttonboxproduct">
+                      <select class="bottleCountNumber">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="12">12</option>
+                      </select>
+                      <button class="buyButton">In mandje</button>
+                      <button class="addToWishlist">wishlist</button>
+                  </section>
+                  <span class="nobackgroundproduct"><img src="Assets/Icons/wishlistjpg.png" alt="OnWishlist" class="wishlistIMG" width="48px" height="40px"></span>
+              </article>
+
+              <article class="product" data-ingredients="Ghost Pepper, Serrano, Carolina Reaper">             
+                <figure> <img src="Assets/Images/ProductPictures/nevadalienhotsauce.webp" alt="Foto van X-traterrestial" max-width="auto" height="auto">
+                </figure>
+                 <a href="X-tra Terrestrial Heat.html"><h3>X-tra Terrestrial Heat</h3></a>
+                 
+                 <section class="shorttext">
+                     Deze saus is van een andere planeet! Buitenaardse hitte in een flesje!
+                 </section>
+ 
+                 <section class="price"> <p>Prijs: &euro;<span class="priceValue">12,50</span></p> <p>Size: <span>350ml</span></p>
+                 </section> 
+                 
+                 <section class="buttonboxproduct">
+                     <select class="bottleCountNumber">
+                         <option value="1">1</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5</option>
+                         <option value="6">6</option>
+                         <option value="7">7</option>
+                         <option value="8">8</option>
+                         <option value="9">9</option>
+                         <option value="10">10</option>
+                         <option value="12">12</option>
+                     </select>
+                     <button class="buyButton">In mandje</button>
+                     <button class="addToWishlist">wishlist</button>
+                 </section>
+                 <span class="nobackgroundproduct"><img src="Assets/Icons/wishlistjpg.png" alt="OnWishlist" class="wishlistIMG" width="48px" height="40px"></span>
+             </article>
+            </section>
+        </section>
+    </main>
+    <aside>
+        <h2>submenu</h2>
+        <section class="asidedropdown">
+           
+        <section class="dropdownbuttons">
+        <button id="openCart" class="buttonaside">Winkelwagen</button>  
+        <section id="hiddenCart">
+            <table id="shopCartTable">
+                <thead>
+                    <tr>
+                        
+                        <th colspan="2">Saus</th>
+                        <th>Hvl.</th>
+                        <th>Prijs</th>
+                        <th colspan="2">Remove</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="myShoppingCart"></tbody>
+                <tfoot id="totalCart">
+                    <tr>
+                        <th colspan="2">Subtotaal</th>
+                        <th colspan="2" id="totalCartPrice"></th>
+                        <th colspan="2">+20%VAT</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Totaalprijs</th>
+                        <th></th>
+                        <th colspan="2" id="totalWithVAT"></th>
+                        <th></th>
+                        
+                    </tr>
+                </tfoot>
+                
+            </table>
+            <button class="checkoutButton">Bestellen</button>
+        </section>   
+        </section>
+
+        <section class="dropdownbuttons">
+            <button class="buttonaside" id="openSearch">! Zoeken !</button>
+             <form action="" id="hiddenSearch">
+            <input type="search" class="searchAside">
+            <input type="submit" class="asideSearchSubmit" value="Zoeken">
+        </form>
+        </section>
+
+        </section>
+       
+        <h2>Uw advertentie hier?</h2>
+
+    </aside>
+    <footer>
+        <section class="backlink"><a href="">Terug naar boven!</a></section>
+        
+            <section class="footcontact">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Telefoon: +32488226260</li>
+                    <li>E-mail: Info@HETEsaus.com</li>
+                    <li>Adrress: Smalleweg 7, 2940 HOEVENEN</li>
+                </ul>
+            </section>
+
+            <article>
+                <h3>Wij streven altijd naar de beste kwaliteit!</h3>
+                    <h4>vind ons op:</h4>
+                    <a href=""><img src="Assets/Icons/Instalogo.jpg" alt="instagram" width="32px" height="32px"></a>
+                    <a href=""><img src="Assets/Icons/Xlogo.jpg" alt="twitter" width="32px" height="32px"></a>
+                    <a href=""><img src="Assets/Icons/FBlogo.jpg" alt="facebook" width="32px" height="32px"></a>
+            </article>
+
+            <section class="footmap">
+                <h4 class="footmapheader">Onze Locatie:</h4>
+                <div id="footmap"></div>
+            </section>
+
+        
+        <section class="copyfoot"> &copy;Lars Lauryssens & &copy;APhogeschool</section>
+        <section class="backlink2"><a href="">Terug naar boven!</a></section>           
+    </footer>
+
+</body>
+</html>
